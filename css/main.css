@@ -7,6 +7,150 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+.flex{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
+
+.header{
+  padding: 10px 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav a{
+  color: black;
+  padding-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+.banner__container{
+  background-image: url("../imgs/melbourne.jpg");
+  height: 600px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  margin-top: 10px;
+}
+
+.banner__container .contain1{
+  margin: 400px;
+}
+
+.banner__container h1{
+  color: white;
+  font-size: 60px;
+  filter: brightness(100%);
+}
+
+.banner__container h3{
+  color: white;
+  filter: brightness(100%);
+  margin-top: 10px;
+}
+
+.banner__container .button{
+  background-color: tomato;
+  filter: brightness(100%);
+  padding-top: 15px;
+  padding-left: 20px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 5px;
+
+}
+.banner__container nav a{
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.contain2{
+  background-color: whitesmoke;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  padding: 40px 10px;
+}
+
+.contain2 div{
+  border: 1px solid lightgray;
+}
+
+.contain2 div h3{
+  margin: 10px 10px;
+}
+
+.contain2 div div{
+  background-color: white;
+
+}
+
+.contain3{
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.contain3 .item h3{
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.contain3 .item h4{
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.grid3{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.pic1{
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg");
+  height: 300px;
+  color: white;
+}
+.pic2{
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg");
+  height: 300px;
+  color: white;
+}
+.pic3{
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg");
+  height: 300px;
+  color: white;
+}
+
+.button1{
+  background-color: tomato;
+  margin-bottom: 20px;
+  margin: 20px 20px;
+}
+
+.button1 a{
+  text-decoration: none;
+  color: white;
+  padding-left: 520px;
+ 
+}
+
+footer{
+  background-color: black;
+  color: white;
+  align-items: center;
+  padding: 100px;
+  justify-content: center;
+}
+
 /*
 banner image
 https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg
@@ -27,6 +171,7 @@ For banner over lay add this class to your div
 */
 .banner__container {
   position: relative;
+
 }
 
 .banner__container:before {
