@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\fewd-response"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "fewd_lab_fullday"
+	}
+}

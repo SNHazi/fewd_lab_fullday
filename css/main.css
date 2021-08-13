@@ -29,6 +29,20 @@ header nav a{
 
 }
 
+header #bars{
+  display: none;
+}
+
+@media (max-width: 100px){
+  header #bars{
+      display: block;
+      margin-right: 20px;
+  }
+  header nav{
+      display:none;
+  }
+}
+
 .banner__container{
   background-image: url("../imgs/melbourne.jpg");
   height: 600px;
@@ -73,10 +87,16 @@ header nav a{
 }
 
 .contain2{
+  display: grid;
   background-color: whitesmoke;
   grid-template-columns: 1fr 1fr;
-  gap: 5px;
-  padding: 40px 10px;
+  gap: 10px;
+  padding: 15px 10px;
+}
+
+.item h4{
+  padding-bottom: 35px;
+  font-size: 20px;
 }
 
 .contain2 div{
@@ -84,7 +104,7 @@ header nav a{
 }
 
 .contain2 div h3{
-  margin: 10px 10px;
+  margin: 1px 1px;
 }
 
 .contain2 div div{
@@ -92,19 +112,54 @@ header nav a{
 
 }
 
+@media (min-width: 320px) {
+  .grid {
+    grid-template-columns:repeat(2 1fr);
+  }
+  }
+  
+  @media (min-width: 320px) and (max-width: 500px){
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  }
+
 .contain3{
-  margin-top: 50px;
+  margin-top: 30px;
+  margin: 20px 20px;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .contain3 .item h3{
   font-size: 40px;
-  padding-bottom: 10px;
 }
 
 .contain3 .item h4{
   font-size: 15px;
   padding-left: 5px;
+  margin-top: 25px;
+}
+
+.container  {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  display: flex;
+}
+
+.container .item1{
+  margin:10px;
+  background-color: lightgray;
+}
+.container .item2{
+  margin:10px;
+  background-color: lightgray;
+}
+.container .item3{
+  margin:10px;
+  background-color: lightgray;
 }
 
 .grid3{
@@ -130,10 +185,23 @@ header nav a{
   color: white;
 }
 
+
+
 .button1{
-  background-color: tomato;
-  margin-bottom: 20px;
-  margin: 20px 20px;
+  font-family: 'Nunito', Arial, sans-serif;
+  color: white;
+  display: inline-block;
+  background-color: #e43636;
+  padding: 0.5rem 2rem;
+  text-decoration : none;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 220px;
+  text-align: center;
+  margin-left: 510px;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px red;
 }
 
 .button1 a{
